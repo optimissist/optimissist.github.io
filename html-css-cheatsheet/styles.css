@@ -1,0 +1,135 @@
+
+@font-face {
+  font-family: 'Finlandica';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/finlandica/v3/-nFsOGk-8vAc7lEtg0aSyZCty9GSsPBE19A7rHj2_C9Otma2sNQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Page set up */
+
+* {
+  background-color: #628092;
+  font-family: 'Finlandica', sans-serif;
+}
+
+.header {
+  background-color: #8B8DAB;
+}
+
+header h1, header h3 {
+  text-align: center;
+  background-color: #26536D;
+  padding: 10px;
+  color: #AFBCC3;
+}
+
+a {
+  color: #AFBCC3;
+  background-color: #26536D;
+}
+
+a:hover {
+  color: #4A4E83;
+}
+
+/* Table */
+
+.table {
+  margin: 100px auto;
+}
+
+table, td {
+    width: 850px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+thead, th {
+  background-color: #26536D;
+  color: #AFBCC3;
+}
+
+.table, thead {
+  border: 2px solid #26536D;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+}
+
+/* red */
+
+.red {
+  color: #f00;
+}
+
+tr.red {
+  outline: 1px dotted #f00;
+}
+
+/* orange */
+
+.orange {
+  color: #FFA500;
+}
+
+tr.orange {
+  outline: 1px dotted #FFA500;
+}
+
+/* yellow */
+
+.yellow {
+  color: #ff0;
+}
+
+tr.yellow {
+  outline: 1px dotted #ff0;
+}
+
+/* green */
+
+.green {
+  color: #008000;
+}
+
+tr.green {
+  outline: 1px dotted #008000;
+}
+
+/* blue */
+
+.blue {
+  color: #00f;
+}
+
+tr.blue {
+  outline: 1px dotted #00f;
+}
+
+/* purple */
+
+.purple {
+  color: #800080;
+}
+
+tr.purple {
+  outline: 1px dotted #800080;
+}
+
+
+/* footer */
+
+footer, footer h4 {
+  background-color: #26536D;
+  padding: 10px;
+  color: #AFBCC3;
+}
+
+ul, li, footer a {
+  background-color: #26536D;
+  color: #AFBCC3;
+}
