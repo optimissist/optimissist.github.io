@@ -1,0 +1,101 @@
+header h1 {
+  text-align: center;
+  font-family: 'Arima', cursive;
+  font-size: 40px;
+}
+
+.h2title {
+  font-family: 'Roboto Slab', serif;
+  border-bottom: 1px dotted #000;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+h1 {
+  font-family: 'Arima', cursive;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 25px;
+}
+
+p, ul, li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.arima {
+  font-family: 'Arima', cursive;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.roboto-slab {
+  font-family: 'Roboto Slab', serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.container {
+    border: 2px solid #a2a2a6;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.color-panel {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    margin: 20px auto;
+    min-height: 100px;
+}
+
+.planetary-purple {
+    background-color: #50238F;
+    color: #fff;
+}
+
+.planetary-purple-2 {
+    background-color: #7956A9;
+    color: #fff;
+}
+
+.latiff {
+    background-color: #9678BE;
+    color: #fff;
+}
+
+.violets {
+    background-color: #B19CCE;
+    color: #000;
+}
+
+.take-down {
+    background-color: #D1C4E2;
+    color: #000;
+}
+
+
+.font-container {
+  text-align: center;
+}
+
+.font-panel {
+  display: inline-block;
+  margin: 20px;
+}
+
+.font-label {
+  font-size: 20px;
+  text-decoration: underline;
+}
