@@ -1,0 +1,277 @@
+/* font-faces */
+
+@font-face {
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/cormorantsc/v16/0ybmGD4kxqXBmOVLG30OGwsmWBMk-hfz0jCGGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Cormorant SC';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cormorantsc/v16/0ybmGD4kxqXBmOVLG30OGwsmABIk-hfz0jCGGQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v26/HhyaU5sn9vOmLzloC_WoEoZK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dosis/v26/HhyaU5sn9vOmLzloC_WoEoZK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*universal styles */
+
+html {
+  font-size: 16px;
+  background-color: #FAE8C9;
+  color: #8B754E;
+  font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+  font-size: 4.125rem;
+  font-family: 'Cormorant SC', serif;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;;
+}
+
+main {
+  margin-top: 1rem;
+  display: flex;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #8B754E;
+  color: #FAE8C9;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 45px;
+}
+
+/* Header */
+
+header {
+  z-index: 100;
+  width: 100%;
+  height: 20rem;
+  background-image: url("https://lumiere-a.akamaihd.net/v1/images/black-spire-outpost-main_38680a60.jpeg?region=8%2C0%2C1543%2C868&width=768");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+.header-copy {
+  background-color: hsla(38, 20%, 88%, .85);
+}
+
+
+.header {
+  font-family: 'Cormorant SC', serif;
+  margin-top: -2.25rem;
+  font-size: 1.75rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.header-padding {
+  padding-top: 10px;
+}
+
+/* Nav */
+
+nav {
+  background-color: #8B754E;
+  color:#fff;
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-item{
+    padding: 0 2rem;
+    font-size: 1.75rem;
+}
+
+/* Attractions and Restaurants*/
+
+.main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.main .img-container {
+    overflow: hidden;
+    width: 35rem;
+    height: 24.2rem;
+}
+.main img {
+  width: 100%;
+}
+
+.main .container {
+  padding: 2rem;
+  border: 1px solid #8B754E;
+  display: flex;
+}
+
+.main-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainh2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: -0.5rem;
+}
+
+.mainh4 {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.attractions, .restaurants {
+  flex-grow: 1;
+}
+
+/* Map */
+
+.mapintro {
+  border: 10px dotted #8B754E;
+  flex-grow: 2;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mapimg1, .mapimg2 {
+  width: 26.625rem;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.map1, .map2 {
+padding: 10px;
+}
+
+.maph2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+.second {
+  padding: 2rem;
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+align-items: center;
+}
+
+
+/* footer */
+
+.footerh4 {
+  padding: 10px 20px;
+}
+
+
+@media all and (max-width: 780px) {
+
+.mapimg1, .mapimg2 {
+  width: 18.625rem;
+}
+
+.main {
+  flex-direction: column;
+}
+
+.second {
+  flex-direction: column;
+}
+}
+
+@media all and (max-width: 615px) {
+  h1 {
+    font-size: 3.125rem;
+  }
+
+.main .img-container {
+  width: 27rem;
+}
+
+.footerh4 {
+  text-align: center;
+}
+}
+
+@media all and (max-width: 475px) {
+  h1 {
+    font-size: 2.125rem;
+    padding: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+  }
+
+  .nav-item {
+    font-size: 1rem;
+  }
+
+  .main .img-container {
+    width: 19rem;
+    height: 18rem;
+}
+}
