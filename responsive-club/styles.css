@@ -1,0 +1,446 @@
+@font-face {
+  font-family: 'Alfa Slab One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/alfaslabone/v17/6NUQ8FmMKwSEKjnm5-4v-4Jh2dJhe_escmA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2RjV9Su1cai.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v24/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Courgette';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/courgette/v13/wEO_EBrAnc9BLjLQAUk1VvoK_kgXiQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Universal Styles*/
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3rem;
+  color: #ffffffBD;
+  /* text-align: center; */
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+body {
+  display: grid;
+  /* max-width: 60rem; */
+  position: relative;
+  margin: auto;
+  grid-template-areas: "header"
+                        "main"
+                       "footer";
+  /* grid-template-rows: 1fr 4fr 1fr; */
+
+}
+
+footer {
+  background-color: #BD2031;
+}
+
+/* header */
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "logo logo . nav nav nav";
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows:13rem;
+  background-image: url("https://www.501st.com/assets/images/indexslider/3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 100;
+  padding: 2rem;
+}
+
+img {
+  object-fit: cover;
+}
+
+.logo {
+  grid-area: logo;
+  display: inline-grid;
+  align-items: start;
+  justify-content: center;
+  }
+
+.logo h1 {
+  margin: auto;
+}
+
+nav {
+grid-area: nav;
+display: inline-grid;
+grid-template-rows: repeat(3, 5rem);
+align-content: center;
+}
+
+
+.intro {
+  display: grid;
+  grid-template-areas: "who what";
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+}
+
+/* nav */
+
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: start;
+  width: 100%;
+}
+
+.nav-item  a {
+  color: #ffffffBD;
+  padding-right: 2rem;
+}
+
+
+li.nav-item:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+
+.copylink {
+  color: #000;
+  text-decoration: underline;
+  }
+
+.content-copy {
+  width: 90%;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.who {
+  padding: 2.5rem;
+  grid-area: who;
+}
+
+.content-image img {
+  width: 90%;
+  height: 22rem;
+}
+
+.what {
+  padding: 2.5rem;;
+  grid-area: what;
+}
+
+
+.who, .what {
+  background-color: #d9d9d9d1;
+   margin: 1.25rem;
+}
+
+.contenth3 {
+  font-size: 2.5rem;
+  margin-bottom: -.5rem;
+  margin-top: -.25rem;
+}
+
+.introcopy {
+  margin-bottom: -.5rem;
+  line-height: 2;
+  font-weight: 300;
+}
+
+/* images */
+
+.photos {
+  display: grid;
+  grid-template-areas: "img1 img2 img3";
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 1rem;
+}
+
+.img {
+  width: 100%;
+  height: 88%;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+
+/* aside */
+
+aside {
+  padding: 1.5rem 8.5rem;
+  text-align: center;
+  background-color: #d9d9d9d1;
+}
+
+.asideh2 {
+  font-family: 'Courgette', cursive;
+}
+
+.asideh4 {
+  font-weight: 200;
+}
+
+/* footer */
+
+footer {
+  display: grid;
+  grid-template-areas: "footerimage footerimage . . smalllogo smalllogo";
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.footerimage {
+  grid-area: footerimage;
+}
+
+.footerimg img {
+  height: 6rem;
+}
+
+.smalllogo {
+  grid-area: smalllogo;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.smalllogo h1 {
+  font-size: 2.75rem;
+}
+
+@media all and (max-width: 1050px) {
+
+  header {
+  display: grid;
+  grid-template-areas: "logo logo logo nav nav nav";
+  }
+
+  .logo {
+    justify-content: start;
+    }
+
+
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-copy {
+    width: auto;
+    padding: 1rem;
+  }
+
+  .content-image {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .content-image img {
+    height: 22rem;
+    width: auto;
+  }
+
+  .who, .what {
+    margin: 2.5rem 4.25rem 0 4.25rem;
+  }
+
+  .contenth3 {
+    font-size: 2.75rem;
+  }
+  .introcopy {
+    font-size: 1.25rem;
+  }
+
+  .photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    width: auto;
+    height: 75%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .who, .what {
+    margin: 1rem 0;
+  }
+}
+
+@media all and (max-width: 580px) {
+  body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    background-image: none;
+    flex-wrap:wrap;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* .logo {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  } */
+
+  nav {
+    display: flex;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  .intros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .content-image img {
+    height: 15rem;
+  }
+
+  .contenth3 {
+    font-size: 2.25rem;
+  }
+
+  .introcopy {
+    font-size: 1rem;
+  }
+
+}
+
+
+@media all and (max-width: 475px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    background-image: none;
+    flex-wrap:wrap;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intros {
+    margin: 1rem;
+    padding: 0 4rem;
+  }
+
+  .content-image img {
+    height: 10rem;
+  }
+
+  .contenth3 {
+    font-size: 1.25rem;
+  }
+
+  .introcopy {
+    font-size: .75rem;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  .intros {
+    display: block;
+  }
+
+  .who, .what {
+    background-color: #fff;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .smalllogo h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    padding-right: 2rem;
+  }
+}
